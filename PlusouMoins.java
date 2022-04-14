@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Test{
+public class PlusouMoins{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int count=0;
@@ -39,12 +39,16 @@ public class Test{
             }
         }
         // chrono.cancel();
-        if(count <= 10) {
-            System.out.println("Vous ête un As de la gachette");
-        }else if(count >= 20){
-            System.out.println("tu peux mieux faire t'inquiète pas");
+        
+        if(count == 1) {
+            System.out.println("« CROYEZ EN VOS RÊVES ET ILS SE RÉALISERONT PEUT-ÊTRE. CROYEZ EN VOUS ET ILS SE RÉALISERONT SÛREMENT.»    Martin Luther King");
+        }else if(count >= 15){
+            System.out.println("« LE PESSIMISTE DIT : JE CROIRAI QUAND JE LE VERRAI. » « L’OPTIMISTE DIT : JE LE VERRAI QUAND JE LE CROIRAI. »    Zig Ziglar ");
+        }else{
+            System.out.println("« SI VOUS POUVEZ LE RÊVER, VOUS POUVEZ LE FAIRE. »      Walt Disney");
         }
+        
         System.out.println();
-        System.out.println("bravo " + Nom+ ", le juste prix est "+ prix +" tu l'as trouvé après "+ count +" tentative(s)"); 
+        System.out.println("bravo " + Nom + ", le juste prix est " + prix +" tu l'as trouvé après "+ count +" tentative(s)"); 
     }
 }
