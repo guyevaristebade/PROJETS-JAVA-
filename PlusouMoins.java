@@ -1,7 +1,15 @@
+/*
+ce programme est le jeu du plus ou moins en ligne de commande 
+vous devez choissir une fourchette de prix et vous n'avez plus qu'a deviner le juste prix 
+si vous y arriver.
+Amusez vous bien ;) !
+*/
+
 import java.util.*;
 
 public class PlusouMoins{
     public static void main(String[] args) {
+        
         Scanner scan = new Scanner(System.in);
         int count=0;
         Random r = new Random();
