@@ -8,7 +8,7 @@ public class Test {
         Scanner scanner = new Scanner(System.in);
 
         int option = 0;
-        List<Etudiant> list = new ArrayList<Etudiant>();
+        List<Student> list = new ArrayList<Student>();
 
         while (option != 4){
             Test.menu();
@@ -29,7 +29,7 @@ public class Test {
                         String course = scanner.next();
                         System.out.print("Please enter the student's grade: ");
                         double grade = scanner.nextInt();
-                        list.add(new Etudiant(name, course, option));
+                        list.add(new Student(name, course, option));
                         System.out.println("Student added successfully!");
                         Test.pause();
                     } catch (Exception e) {
@@ -49,7 +49,7 @@ public class Test {
 
                     try {
                         String search = scanner.next();
-                        Etudiant student = Test.getContaintName(list, search);
+                        Student student = Test.getContaintName(list, search);
                         if(student != null){
                             Test.displayStudentByName(student);
                             Test.pause();
@@ -71,10 +71,10 @@ public class Test {
         System.out.println("Welcome to the Student Manager!\n\nMenu:\n\n1. Add a new student\n2. Display the list of students\n3. Search for a student by name\n4. Quit\n\nPlease enter the option number you want to select: ");
     }
 
-    public static void toString(List<Etudiant> students){
+    public static void toString(List<Student> students){
         if(students.size()  != 0){
             int index = 1;
-            for(Etudiant student : students){
+            for(Student student : students){
                 System.out.println(index + ". Name:"+ student.getStudentName() + " | Course:" + student.getStudentCourse() + " | Grade:" + student.getStudentNote());
                 index++;
             }
@@ -93,9 +93,9 @@ public class Test {
         }
     }
 
-    public static Etudiant getContaintName(List<Etudiant> students, String name){
+    public static Student getContaintName(List<Student> students, String name){
         if(students.size() != 0){
-            for(Etudiant student : students){
+            for(Student student : students){
                 if( student.getStudentName().startsWith(name)){
                     return student;
                 }
@@ -107,7 +107,7 @@ public class Test {
         return null;
     }
 
-    public static void displayStudentByName(Etudiant e){
+    public static void displayStudentByName(Student e){
         System.out.println("Name: "+ e.getStudentName() +" | Course: "+ e.getStudentCourse() + " | Grade: "+ e.getStudentNote());
     }
 }
