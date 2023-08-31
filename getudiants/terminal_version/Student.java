@@ -1,3 +1,4 @@
+package terminal_version;
 import java.util.List;
 
 public class Student {

@@ -1,3 +1,5 @@
+package terminal_version;
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
