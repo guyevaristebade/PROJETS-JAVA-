@@ -1,13 +1,13 @@
 import java.util.List;
 
-public class Etudiant {
+public class Student {
 
     private String studentName;
     private String studentCourse;
     private int studentNote;
 
 
-    public Etudiant(String studentName, String studentCourse, int studentNote){
+    public Student(String studentName, String studentCourse, int studentNote){
         this.studentName = studentName;
         this.studentCourse = studentCourse;
         this.studentNote = studentNote;
